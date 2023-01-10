@@ -1,0 +1,53 @@
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+header ul.QRcode-explain{
+  position: fixed; top: 270px; right:100px;
+  list-style: none;
+  color: #000;
+}
+header ul.QRcode-explain ul.li a{
+color: #000;
+}
+header .sub-menu{
+
+}
+header .sub-menu ul.menu{
+display: flex;
+}
+header .sub-menu ul.menu input.button-image{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+header div.sub-menu ul.menu div.dropdown-menu{
+border: 1px solid #000;
+min-width: 200px;
+min-height: 100vh;
+position: fixed;
+top: 10px;
+right:2px;
+display:none;
+}
+header .sub-menu ul.menu ul.mypage{
+position: relative;
+display: none;
+}
+header .sub-menu ul.menu ul.scan-list{
+position: relative;
+display: none;
+}
+header .sub-menu ul.menu ul.recommend-list{
+position: relative;
+display: none;
+}
+header .sub-menu ul.li a{
+  font-size:12px;
+  padding: 11px 16px;
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+.show {display:none;}

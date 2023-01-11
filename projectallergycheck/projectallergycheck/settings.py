@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pages',#시작페이지
+    'pages',#html 구현 앱
 ]
 
 MIDDLEWARE = [

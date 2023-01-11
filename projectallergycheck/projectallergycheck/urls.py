@@ -21,10 +21,23 @@ from pages import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('index/', views.index),
     path('', views.index, name='index'),
+
+    #about url
+    path('about/edit', views.aboutQRcode, name='aboutEdit'),
+    path('about/home', views.aboutQRcode, name='aboutHome'),
+    path('about/list', views.aboutQRcode, name='aboutList'),
+    path('about/qrCode', views.aboutQRcode, name='aboutQRcode'),
+    path('about/test', views.aboutQRcode, name='aboutTest'),
+    path('about/user', views.aboutQRcode, name='aboutUser'),
+
+    #login url
+    #mypage url
+    #recommend url
+    #scan url
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+#static 폴더 url설정
 
 #path(url,해당 요청을 다룰 view의 함수)
 #root url은 " 라고 치면됨.

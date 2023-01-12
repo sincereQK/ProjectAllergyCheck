@@ -49,6 +49,7 @@ urlpatterns = [
 
     #scan url
     path('scan/all_scan_list', views.scan_all_scan_list, name='scan_all_scan_list'),
+    path('scan/latest_scan_list', views.scan_latest_scan_list, name='scan_latest_scan_list'),
 
 
 ]

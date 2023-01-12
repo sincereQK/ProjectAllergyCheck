@@ -24,17 +24,33 @@ urlpatterns = [
     path('', views.index, name='index'),
 
     #about url
-    path('about/edit', views.aboutQRcode, name='aboutEdit'),
-    path('about/home', views.aboutQRcode, name='aboutHome'),
-    path('about/list', views.aboutQRcode, name='aboutList'),
-    path('about/qrCode', views.aboutQRcode, name='aboutQRcode'),
-    path('about/test', views.aboutQRcode, name='aboutTest'),
-    path('about/user', views.aboutQRcode, name='aboutUser'),
+    path('about/edit', views.about_edit, name='about_edit'),
+    path('about/home', views.about_home, name='about_home'),
+    path('about/list', views.about_list, name='about_list'),
+    path('about/qrCode', views.about_qrcode, name='about_qrcode'),
+    path('about/test', views.about_test, name='about_test'),
+    path('about/user', views.about_user, name='about_user'),
 
     #login url
+    path('login/index', views.login_index, name='login_index'),
+
     #mypage url
+    path('mypage/badfood', views.mypage_badfood, name='mypage_badfood'),
+    path('mypage/bodyInfo', views.mypage_bodyInfo, name='mypage_bodyInfo'),
+    path('mypage/goodfood', views.mypage_goodfood, name='mypage_goodfood'),
+    path('mypage/mypage', views.mypage_mypage, name='mypage_mypage'),
+    path('mypage/nickname', views.mypage_nickname, name='mypage_nickname'),
+    path('mypage/warningfood', views.mypage_warningfood, name='mypage_warningfood'),
+
     #recommend url
+    path('recommend/all_recommend_list', views.recommend_all_recommend_list, name='recommend_all_recommend_list'),
+    path('recommend/nutrient_recommend', views.recommend_nutrient_recommend, name='recommend_nutrient_recommend'),
+    path('recommend/user_recommend', views.recommend_user_recommend, name='recommend_user_recommend'),
+
     #scan url
+    path('scan/all_scan_list', views.scan_all_scan_list, name='scan_all_scan_list'),
+
+
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 #static 폴더 url설정

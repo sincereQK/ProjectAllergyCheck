@@ -67,4 +67,7 @@ def recommend_user_recommend(request):
 
 
 #scan부분 컨트롤
+def scan_all_scan_list(request):
+    return render(request,'../templates/scan/all-scan-list.html')
+
 

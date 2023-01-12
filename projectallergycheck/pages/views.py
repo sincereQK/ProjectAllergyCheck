@@ -72,3 +72,6 @@ def scan_all_scan_list(request):
 
 def scan_latest_scan_list(request):
     return render(request,'../templates/scan/latest-scan-list.html')
+
+def scan_scan_list(request):
+    return render(request,'../templates/scan/scan-list.html')

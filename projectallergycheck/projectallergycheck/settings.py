@@ -39,8 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    'pages',#html 구현 앱
-    'accounts'#회원관리
+    'pages',#기본 화면 밑 기타 페이지 출력 관련 앱
+    'accounts',#회원관리 관련 앱
+    'record',#이력 관련 앱
+    'scan',#바코드 스캔 관련 앱
 ]
 
 MIDDLEWARE = [
@@ -58,7 +60,7 @@ ROOT_URLCONF = 'projectallergycheck.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "templates")], #폴더 바깥으로 templates 통합
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

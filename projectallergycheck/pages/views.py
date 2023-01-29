@@ -7,24 +7,24 @@ from django.shortcuts import render
 def index(request):
     #테스트용
     #context = {'msg':'hello','name':'Matt'}
-    return render(request,'./templates/index.html')
+    return render(request,'./index.html')
 
 # #about부분 컨트롤
 def about_qrcode(request):
-    return render(request,'templates/pages/about/qrCode.html')
+    return render(request,'./pages/about/qrCode.html')
 
 def about_test(request):
-    return render(request,'templates/pages/about/test.html')
+    return render(request,'./pages/about/test.html')
 
 def about_user(request):
-    return render(request,'templates/pages/about/user.html')
+    return render(request,'./pages/about/user.html')
 
 #recommend부분 컨트롤
 def recommend_all_recommend_list(request):
-    return render(request,'templates/pages/recommend/all_recommend_list.html')
+    return render(request,'./pages/recommend/all_recommend_list.html')
 
 def recommend_nutrient_recommend(request):
-    return render(request,'templates/pages/recommend/nutrient_recommend.html')
+    return render(request,'./pages/recommend/nutrient_recommend.html')
 
 def recommend_user_recommend(request):
-    return render(request,'templates/pages/recommend/user_recommend.html')
+    return render(request,'./pages/recommend/user_recommend.html')

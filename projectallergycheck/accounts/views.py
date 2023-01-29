@@ -26,19 +26,19 @@ from django.shortcuts import render, redirect
 
 #mypage부분 컨트롤
 def accounts_badfood(request):
-    return render(request,'templates/accounts/badfood.html')
+    return render(request,'./accounts/badfood.html')
 
 def accounts_bodyInfo(request):
-    return render(request,'templates/accounts/bodyInfo.html')
+    return render(request,'./accounts/bodyInfo.html')
 
 def accounts_goodfood(request):
-    return render(request,'templates/accounts/goodfood.html')
+    return render(request,'./accounts/goodfood.html')
 
 def accounts_mypage(request):
-    return render(request,'templates/accounts/mypage.html')
+    return render(request,'./accounts/mypage.html')
 
 def accounts_nickname(request):
-    return render(request,'templates/accounts/nickname.html')
+    return render(request,'./accounts/nickname.html')
 
 def accounts_warningfood(request):
-    return render(request,'templates/accounts/warningfood.html')
+    return render(request,'./accounts/warningfood.html')

@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
     'pages',#기본 화면 밑 기타 페이지 출력 관련 앱
     'accounts',#회원관리 관련 앱
     'record',#이력 관련 앱
@@ -60,7 +59,7 @@ ROOT_URLCONF = 'projectallergycheck.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "templates")],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

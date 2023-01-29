@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
     'pages',#html 구현 앱
+    'accounts'#회원관리
 ]
 
 MIDDLEWARE = [

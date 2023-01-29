@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from pages import views
@@ -32,7 +32,7 @@ urlpatterns = [
     path('about/user', views.about_user, name='about_user'),
 
     #login url
-    path('login/index', views.login_index, name='login_index'),
+    #path('login/index', views.login_index, name='login_index'),
 
     #mypage url
     path('mypage/badfood', views.mypage_badfood, name='mypage_badfood'),
@@ -48,7 +48,9 @@ urlpatterns = [
     path('recommend/user_recommend', views.recommend_user_recommend, name='recommend_user_recommend'),
 
     #scan url
-    path('scan/all_scan_list', views.scan_all_scan_list, name='scan_all_scan_list'),
+    #path('scan/all_scan_list', views.scan_all_scan_list, name='scan_all_scan_list'),
+    #path('scan/latest_scan_list', views.scan_latest_scan_list, name='scan_latest_scan_list'),
+    #path('scan/scan_list', views.scan_scan_list, name='scan_scan_list'),
 
 
 ]

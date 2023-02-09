@@ -7,6 +7,6 @@ from . import views # . 은 '현재 디렉토리에서' 라는 의미
 app_name = 'scan'
 urlpatterns = [
     #scan url
-    path('scan_list/', views.scan_scan_list, name='scan_scan_list'),
-    
+    #path('scan_list/', views.scan_scan_list, name='scan_scan_list'),
+
 ]

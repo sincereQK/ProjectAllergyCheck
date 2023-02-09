@@ -9,4 +9,5 @@ urlpatterns = [
     #record url
     path('all_scan_list/', views.record_all_scan_list, name='record_all_scan_list'),
     path('latest_scan_list/', views.record_latest_scan_list, name='record_latest_scan_list'),
+    path('scan_list/', views.record_scan_list, name='record_scan_list'),
 ]

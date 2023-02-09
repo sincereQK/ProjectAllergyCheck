@@ -43,6 +43,7 @@ def allergy_check(prdlstReportNo):
     testurl3 = 'http://apis.data.go.kr/B553748/CertImgListService/getCertImgListService?serviceKey=xPc0kxBXexkj0qNFjAwbQvtIo4zzKZMWwGTNf95HscDNOkxDO8DtJ3nzAjcNB3dLVRBL9JqAXLW4rt%2BXboEotw%3D%3D&prdlstReportNo=201704760012&returnType=xml'
     testurl4 = 'http://apis.data.go.kr/B553748/CertImgListService/getCertImgListService?serviceKey=xPc0kxBXexkj0qNFjAwbQvtIo4zzKZMWwGTNf95HscDNOkxDO8DtJ3nzAjcNB3dLVRBL9JqAXLW4rt%2BXboEotw%3D%3D&prdlstReportNo=8809360172547&returnType=xml'
     testurl5 = 'http://apis.data.go.kr/B553748/CertImgListService/getCertImgListService?serviceKey=xPc0kxBXexkj0qNFjAwbQvtIo4zzKZMWwGTNf95HscDNOkxDO8DtJ3nzAjcNB3dLVRBL9JqAXLW4rt%2BXboEotw%3D%3D&prdlstReportNo=195505090011&returnType=xml'
+    testurl6 = 'http://apis.data.go.kr/B553748/CertImgListService/getCertImgListService?serviceKey=xPc0kxBXexkj0qNFjAwbQvtIo4zzKZMWwGTNf95HscDNOkxDO8DtJ3nzAjcNB3dLVRBL9JqAXLW4rt%2BXboEotw%3D%3D&prdlstReportNo=195505090011&returnType=xml' #지워도됨
 
     # request url 정의
     url = 'http://apis.data.go.kr/B553748/CertImgListService/getCertImgListService?serviceKey='+serviceKey+'&prdlstReportNo='+ prdlstReportNo+'&returnType=xml'

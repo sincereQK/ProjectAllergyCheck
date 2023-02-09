@@ -1,39 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test</title>
-    <link rel="stylesheet" href="/static/css/main.css" />
-    <script src="/static/js/main.js"></script>
-    <style>
-      div {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-  <body>
-    <a href="about/qrCode"
-      >바코드/QR코드 스캔
-      <img
-        src="/static/images/qrCode.png"
-        alt="QRcode"
-        style="position: fixed; left: 50%; transform: translateX(-50%)"
-      />
-    </a>
-    <a href="about/list">
-      <img
-        src="/static/images/list.png"
-        alt="list"
-        style="
-          width: 20px;
-          height: 20px;
-          position: fixed;
-          top: 20px;
-          right: 20px;
-        "
-      />
-    </a>
-  </body>
-</html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/ProjectAllergyCheck/projectallergycheck/static/css/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div id = "wapper">
+    <header></header>
+    <section>
+      <div class="middle">
+        <a href="/ProjectAllergyCheck/projectallergycheck/pages/templates/index.html" class="logo">
+            <img src="/ProjectAllergyCheck/projectallergycheck/static/images/logo.png" 
+            alt="mainLogo"> 
+        </a>
+         <form method="post">
+          <input type="text" name="name"
+          style="position: absolute;
+          top: 55%;
+          left: 50%;
+          "> 
+          <div class="material-icons">search</div>
+          <input type="submit" value="바코드 검색하기">      
+         </div>
+         <div class="inner">
+          <div class="sub-menu">
+              <ul class = "menu" style="color:black;">
+                  <li style="list-style:none;">
+                      <a href="/signup">로그인</a>
+                  </li>
+                  <li style="list-style:none;">
+                      <a href="javascript:void(0)">마이페이지</a>
+                  </li>
+                  <li style="list-style:none;">
+                      <a href="javascript:void(0)">검색 내역</a>
+                  </li>
+              </ul> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+    </footer>
+  </div>
+</body>
+</html> 

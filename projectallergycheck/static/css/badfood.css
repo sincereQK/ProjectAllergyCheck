@@ -1,6 +1,78 @@
-label.badfoodlist {
-position: absolute;
-text-align: center;
-vertical-align: center;
-top: 100px; left: 20px;
+body {
+    text-align: center;
+    color: black;
+}
+div#wapper {
+    width: 100vw;
+    text-align: left;
+    min-height: 300px;
+    margin: 0 auto;
+  overflow-y:scroll;
+}
+header, footer, nav, aside, section {
+position:relative;
+}
+header {
+    width:100%;
+height:5vh;
+text-align:center;
+border:1px solid black;
+border-width:0 0 1px 0;
+float:left;
+display:flex;
+}
+header .lists{
+position: relative;
+}
+nav, section, aside {
+    float: left;
+    height: 80vh;
+}
+nav {
+    width: 14.8% ;
+border:1px solid black;
+border-width:0 1px 0 0;
+}
+section {
+    width: 70%; 
+}
+aside {
+    width: 14.8%;
+border:1px solid black;
+border-width: 0 0 0 1px;
+}
+/*footer {
+width:100vh;
+    height: 50px;
+    background-color: blue;
+    position: relatiev;
+    clear: both;
+}
+*/
+article {
+    width: 90%;
+    margin: 20px;
+}
+ul {
+text-align:none;
+list-style:none;
+float:left;
+width:100%;
+display:flex;
+justify-content: flex-end;
+align-items: flex-end;
+}
+li{
+float:left;
+margin-right:30px;
+position:relative;
+}
+a{
+    text-decoration-line:none;
+    color: black;
+}
+H1{
+    text-align: center;
+  padding:20px;
+  border:1px solid black;
 }

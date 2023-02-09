@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스캔결과</title>
+    <link rel="stylesheet" href="./scan-result.css" />
+  </head>
+  <body>
+
+    {% if result %}
+        {{ result | json_script:'jsonData'}}
+        name is : 
+        <script type = "text/javascript"> 
+            var placeData = JSON.parse(document.getElementById('jsonData').textContent);
+            for( var key1 in placeData){
+                var jsonData = JSON.parse(placeData[key1])
+                   for (var key2 in jsonData)
+                {
+                    document.write(key2+" : " +jsonData[key2]+"<br>")            
+                }
+            }
+        </script>
+    {% endif %}
+
+
+    <div style="text-align: center">
+      <h1>스캔 결과</h1>
+    </div>
+
+    <a href="/ProjectAllergyCheck/projectallergycheck/pages/templates/index.html">
+      <img
+        src="../images/Home.png"
+        alt="Home"
+        style="
+          width: 20px;
+          height: 20px;
+          position: fixed;
+          top: 20px;
+          left: 20px;
+        "
+      />
+    </a>
+  </body>
+</html>

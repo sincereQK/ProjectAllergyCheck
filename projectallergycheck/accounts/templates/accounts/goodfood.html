@@ -1,56 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<html>
+<head>
+  <title>AllergyCheck</title>
+<meta content="text/html; charset=euc-kr">
+<title>HTML5</title>
+<link rel="stylesheet" href="../../../static/css/goodfood.css">
   </head>
-  <body>
-    <div style="position: fixed; left: 50%; transform: translateX(-50%)">
-      몸에 좋은 음식
-    </div>
-    <a href="../about/Home.html">
-      <img
-        src="../images/Home.png"
-        alt="Home"
-        style="
-          width: 20px;
-          height: 20px;
-          position: fixed;
-          top: 20px;
-          left: 20px;
-        "
-      />
-    </a>
-    <a href="../about/Edit.html">
-      <img
-        src="../images/Edit.png"
-        alt="Edit"
-        style="
-          width: 20px;
-          height: 20px;
-          position: fixed;
-          top: 20px;
-          right: 20px;
-        "
-      />
-    </a>
-    <a href="javascript:void(0)">
-      <div
-        style="
-          width: 300px;
-          height: 500px;
-          position: fixed;
-          top: 100px;
-          left: 60px;
-          border: 5px solid black;
-          border-radius: 10px;
-          color: #000;
-        "
-      >
-        몸에 좋은 음식 내역:
+<body>
+    <div id="wapper">
+        <!--헤더시작-->
+    <header>
+      <div class="logo">
+        <a href="../../../pages/templates/">
+          <img src="../../../static/images/logo.png"
+          style="height:15vh; display: block; margin: 0 auto; " alt="logo">
+        </a>
       </div>
-    </a>
-  </body>
+    <div class="inner">
+      <ul class="main-menu">
+        <li class="item">
+          <div class="item__name">바코드 입력</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <ul>
+                    <li>바코드 입력</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">로그인</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <ul>
+                    <li>로그인</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">마이페이지</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <ul>
+                    <li>마이페이지</li>
+                    <li>알레르기 내역</li>
+                    <li>식습관</li>
+                    <li>먹으면 안되는 음식</li>
+                    <li>주의해야할 음식</li>
+                  </ul>
+                </li>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">검색내역</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <ul>
+                    <li>검색 내역</li>
+                    <li>최근 검색 내역</li>
+                    <li>전체 검색 내역</li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+         
+        </header>
+        <!--네비게이션-->
+        <nav>
+     
+        </nav>  
+        <!--콘텐츠부분-->
+    <div class="main-menu">
+      <section>
+        <H1>마이페이지</H1>
+        <div class="board">
+        </div>
+      </section>
+    </div>
+
+        <!--사이드바-->
+        <aside>
+           
+        </aside>
+    </div>
+</body>
 </html>

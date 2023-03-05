@@ -3,7 +3,6 @@ body {
 }
 div#wapper {
     width: 100vw;
-    text-align: left;
     min-height: 15vh;
     margin: 0 auto;
 }
@@ -31,7 +30,7 @@ right: 0;
 z-index: 1;
 display: flex;
 width:430px;
-}
+}   
 header .main-menu .item .item__name {
 padding: 10px 20px 0 0;
 font-family: Arial, sans-serif;

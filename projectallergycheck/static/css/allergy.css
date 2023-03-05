@@ -3,7 +3,6 @@ body {
 }
 div#wapper {
     width: 100vw;
-    text-align: left;
     min-height: 15vh;
     margin: 0 auto;
 }
@@ -31,7 +30,7 @@ right: 0;
 z-index: 1;
 display: flex;
 width:430px;
-}
+}   
 header .main-menu .item .item__name {
 padding: 10px 20px 0 0;
 font-family: Arial, sans-serif;
@@ -64,6 +63,7 @@ header .main-menu .item .item__contents .contents__menu > ul > li ul li {
 padding: 5px 0;
 font-size: 12px;
 color: white;
+cursor: pointer;
 }
 header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
 color: #212CD4; /*마우스 올라갔을때 파란색*/

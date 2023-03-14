@@ -10,15 +10,15 @@ a{
 ul{
   list-style: none;
   position:relative;
-  left:760px;
 }
 
 li{
   float: left;
   margin-right: 30px;
 }
-
-
+div{
+  display: block;
+}
 div#wapper {
   width: 100%;
   text-align: left;
@@ -27,19 +27,72 @@ div#wapper {
 }
 
 header{
-  height: 20vw;
+  height: 15vh;
   text-align: center;
   width: 100%;
 }
-
 section{
-  text-align: center;
-  float:left;
-  height:200px;
-  width: 100%;
+  height: 35vh;
 }
+section .box{
+  display:block;
+}
+footer {
+  position:fixed;
+  width:100%;
+  height: 50vh;
+  border-width:0 0 1px 0;
+  float:left;
+  display:block;
+  z-index:9;
+  }
+  footer .main-menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  width:430px;
+  }   
+  footer .main-menu .item .item__name {
+  padding: 10px 20px 0 0;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  }
+  footer .main-menu .item:hover .item__name {
+  color: #212CD4; /*글자가 마우스 올라갔을 때 파란색*/
+  border-radius: 6px 6px 0 0;
+  }
+  footer .main-menu .item .item__contents {
+  min-width: 390px;
+  position: fixed;
+  right: 0;
+  display: none;
+  }
+  footer .main-menu .item:hover .item__contents {
+  display: block;
+  }
+  footer .main-menu .item .item__contents .contents__menu {
+  background-color: #3091DB;  /*드롭메뉴 배경색 하늘색*/
+  }  
+  footer .main-menu .item .item__contents .contents__menu > ul {
+  padding: 20px 0;
+  display: flex;
+  }
+  footer .main-menu .item .item__contents .contents__menu > ul > li {
+  width: 220px;
+  }
+  footer .main-menu .item .item__contents .contents__menu > ul > li ul li {
+  padding: 5px 0;
+  font-size: 12px;
+  color: white;
+  cursor: pointer;
+  }
+  footer .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
+  color: #212CD4; /*마우스 올라갔을때 파란색*/
+  }
 
-section .middle{
+  footer .middle{
             border-radius: 20px;
             position:absolute;
             top:40%;
@@ -47,31 +100,58 @@ section .middle{
             transform: translate(-40%,-50%);
 }
 
-section .inner{
+footer .inner{
   margin: 0 auto;
   position: relative;
   width: 100%;
 }
 
-section .inner .sub-menu{
+footer .inner .sub-menu{
   float: left;
   list-style: none;
   margin: 0px;
   padding-inline-start: 0px;
 }
 
-section .inner .sub-menu ul.li{
+footer .inner .sub-menu ul.li{
   position: relative;
   float: left;
   margin: 0 auto;
   width: 100px;
 }
 
-footer {
-  text-align: center;
-  float: left;
-  height: 300px;
-  width: 100%;
+.search-mode {
   position: relative;
+  width: 400px;
+  height: 40px;
+  margin: 10px auto;
 }
+
+input {
+  border: 1px solid #F1F1F1;
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 30px ;
+}
+
+.search-icon {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  left: 10px;
+}
+
+.search {
+  color: #808080;
+}
+
+.qrcode {
+  display: inline-block;
+  margin-left: 5px;
+  line-height: 1.5;
+}
+
 

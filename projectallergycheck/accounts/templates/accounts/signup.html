@@ -1,38 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up</title>
+<html>
+<head>
+  <title>AllergyCheck</title>
+<meta content="text/html; charset=euc-kr">
+<title>HTML5</title>
+<link rel="stylesheet" href="../../../static/css/signup.css">
   </head>
-  <body>
-    <div class="container my-3">
-      <form method="post" action="{% url 'common:signup' %}">
-          {% csrf_token %}
-          {% include "form_errors.html" %}
-          <div class="mb-3">
-              <label for="username">사용자 이름</label>
-              <input type="text" class="form-control" name="username" id="username"
-                     value="{{ form.username.value|default_if_none:'' }}">
-          </div>
-          <div class="mb-3">
-              <label for="password1">비밀번호</label>
-              <input type="password" class="form-control" name="password1" id="password1"
-                     value="{{ form.password1.value|default_if_none:'' }}">
-          </div>
-          <div class="mb-3">
-              <label for="password2">비밀번호 확인</label>
-              <input type="password" class="form-control" name="password2" id="password2"
-                     value="{{ form.password2.value|default_if_none:'' }}">
-          </div>
-          <div class="mb-3">
-              <label for="email">이메일</label>
-              <input type="text" class="form-control" name="email" id="email"
-                     value="{{ form.email.value|default_if_none:'' }}">
-          </div>
-          <button type="submit" class="btn btn-primary">생성하기</button>
-      </form>
+<body>
+  <div id="wapper">
+    <!--헤더시작-->
+<header>
+  <div class="logo" style="text-align: center; position:relative; ">
+    <a href="../../../pages/templates/">
+      <img src="../../../static/images/logo.png"
+      style="height:15vh; margin: auto;" alt="logo">
+    </a>
   </div>
-  </body>
+<div class="inner">
+  <ul class="main-menu">
+    <li class="item">
+      <div class="item__name">
+        <a href="../../../pages/templates/pages/about/qrCode.html">바코드 입력</a>
+      </div>
+      <div class="item__contents">
+        <div class="contents__menu">
+          <ul class="inner">
+            <li>
+              <ul>
+                <li>
+                  <a href="../../../pages/templates/pages/about/qrCode.html">바코드 입력</a>
+                </li>
+
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="item">
+      <div class="item__name">
+        <a href="./signup.html">로그인</a>
+      </div>
+      <div class="item__contents">
+        <div class="contents__menu">
+          <ul class="inner">
+            <li>
+              <ul>
+                <li>
+                  <a href="./signup.html">로그인</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="item">
+      <div class="item__name">
+        <a href="./mypage.html">마이페이지</a>
+      </div>
+      <div class="item__contents">
+        <div class="contents__menu">
+          <ul class="inner">
+            <li>
+              <ul>
+                <li>
+                  <a href="./mypage.html">마이페이지</a>
+                </li>
+                <li>
+                  <a href="./allergy.html">알레르기 내역</a>
+                </li>
+                <li>
+                  <a href="eatingHabit.html">식습관</a>
+                </li>
+                <li>
+                  <a href="badfood.html">먹으면 안되는 음식</a>
+                </li>
+                <li>
+                  <a href="warningfood.html">주의해야할 음식</a>
+                </li>
+              </ul>
+            </li>
+        </div>
+      </div>
+    </li>
+    <li class="item">
+      <div class="item__name">
+        <a href="../../../record/templates/record/scan-list.html">검색 내역</a>
+      </div>
+      <div class="item__contents">
+        <div class="contents__menu">
+          <ul class="inner">
+            <li>
+              <ul>
+                <li>
+                  <a href="../../../record/templates/record/scan-list.html">검색 내역</a>
+                </li>
+                <li>
+                  <a href="../../../record/templates/record/latest-scan-list.html">최근 검색 내역</a>
+                </li>
+                <li>
+                  <a href="../../../record/templates/record/all-scan-list.html">전체 검색 내역</a>
+                </li>
+              </ul>
+            </li>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+    
+    </header>
+        <!--네비게이션-->
+        <nav>
+     
+        </nav>  
+        <!--콘텐츠부분-->
+    <div class="main-menu">
+      <section>
+        <H1>마이페이지</H1>
+        <div class="board">
+        </div>
+      </section>
+    </div>
+
+        <!--사이드바-->
+        <aside>
+           
+        </aside>
+    </div>
+</body>
 </html>

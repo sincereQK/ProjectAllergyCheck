@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/ProjectAllergyCheck/projectallergycheck/static/css/index.css">
+    <link rel="stylesheet" href="/projectallergycheck/static/css/index.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
 </head>
 <body>
   <div id = "wapper">
@@ -14,37 +15,116 @@
     <section>
       <div class="middle">
         <a href="/ProjectAllergyCheck/projectallergycheck/pages/templates/index.html" class="logo">
-            <img src="/ProjectAllergyCheck/projectallergycheck/static/images/logo.png" 
+            <img src="/projectallergycheck/static/images/logo.png" 
+            style="height: 200px;margin: auto; position:relative; top:1vh; display:block; "
             alt="mainLogo"> 
         </a>
-         <form method="post">
-          <input type="text" name="name"
-          style="position: absolute;
-          top: 55%;
-          left: 50%;
-          "> 
-          <div class="material-icons">search</div>
-          <input type="submit" value="바코드 검색하기">      
-         </div>
-         <div class="inner">
-          <div class="sub-menu">
-              <ul class = "menu" style="color:black;">
-                  <li style="list-style:none;">
-                      <a href="/signup">로그인</a>
-                  </li>
-                  <li style="list-style:none;">
-                      <a href="javascript:void(0)">마이페이지</a>
-                  </li>
-                  <li style="list-style:none;">
-                      <a href="javascript:void(0)">검색 내역</a>
-                  </li>
-              </ul> 
+      </div>
+      <div class="search-mode">
+        <input type="text" placeholder="바코드 번호 입력">
+    
+        <div class="search-icon">
+          <div class="search">
+            <i class="fas fa-search"></i>
+          </div>
+    
+          <div class="qrcode">
+           <i class="fas fa-qrcode"></i>
           </div>
         </div>
-      </div>
+  </div>
     </section>
 
     <footer>
+      <div class="inner">
+        <ul class="main-menu">
+          <li class="item">
+            <div class="item__name"><a href="./pages/about/qrCode.html">바코드 입력</a></div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <ul>
+                      <li>
+                        <a href="./pages/about/qrCode.html">바코드 입력</a>
+                      </li>
+
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name"><a href="../../accounts/templates/accounts/signup.html">로그인</a></div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <ul>
+                      <li>
+                        <a href="../../accounts/templates/accounts/signup.html">로그인</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name"><a href="../../accounts/templates/accounts/mypage.html">마이페이지</a></div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <ul>
+                      <li>
+                        <a href="../../accounts/templates/accounts/mypage.html">마이페이지</a>
+                      </li>
+                      <li>
+                        <a href="../../accounts/templates/accounts/allergy.html">알레르기 내역</a>
+                      </li>
+                      <li>
+                        <a href="../../accounts/templates/accounts/eatingHabit.html">식습관</a>
+                      </li>
+                      <li>
+                        <a href="../../accounts/templates/accounts/badfood.html">먹으면 안되는 음식</a>
+                      </li>
+                      <li>
+                        <a href="../../accounts/templates/accounts/warningfood.html">주의해야할 음식</a>
+                      </li>
+                    </ul>
+                  </li>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__name">
+              <a href="../../record/templates/record/scan-list.html">검색 내역</a>
+            </div>
+            <div class="item__contents">
+              <div class="contents__menu">
+                <ul class="inner">
+                  <li>
+                    <ul>
+                      <li>
+                        <a href="../../record/templates/record/scan-list.html">검색 내역</a>
+                      </li>
+                      <li>
+                        <a href="../../record/templates/record/latest-scan-list.html">최근 검색 내역</a>
+                      </li>
+                      <li>
+                        <a href="../../record/templates/record/all-scan-list.html">전체 검색 내역</a>
+                      </li>
+                    </ul>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
     </footer>
   </div>
 </body>

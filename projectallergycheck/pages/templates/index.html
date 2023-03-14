@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/projectallergycheck/static/css/index.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
 </head>
 <body>
   <div id = "wapper">
@@ -19,12 +20,18 @@
             alt="mainLogo"> 
         </a>
       </div>
-      <div class = box>
-          <form method="post">
-            <input type="text" name="name"> 
-            <div class="material-icons">search</div>
-            <input type="submit" value="바코드 검색하기">
-      </div>      
+      <div class="search-mode">
+        <input type="text" placeholder="바코드 번호 입력">
+    
+        <div class="search-icon">
+          <div class="search">
+            <i class="fas fa-search"></i>
+          </div>
+    
+          <div class="qrcode">
+           <i class="fas fa-qrcode"></i>
+          </div>
+        </div>
   </div>
     </section>
 
